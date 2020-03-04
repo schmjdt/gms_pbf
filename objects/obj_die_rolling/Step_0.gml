@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description 
 
 //if (place_meeting(abs(x - goal_x) + goal_s, y, obj_die_rolling) or
 //    place_meeting(x, abs(y - goal_y) + goal_s, obj_die_rolling)) {

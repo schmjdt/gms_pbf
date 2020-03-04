@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "c34d82b3-6e40-4240-9667-8d10fd64c15a",
+            "Value": {
+                "id": "bd9655f1-8647-4779-a94d-fe58004138f4",
+                "resourcePath": "sprites\\spr_shadow\\spr_shadow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cbeebaf8-1510-4908-a536-d7f57d49103e",
             "Value": {
                 "id": "93f2c094-1fd4-4a46-b9e2-fc2eabddeff5",
