@@ -48,33 +48,7 @@ total_dice_to_roll = clamp(total_dice_to_roll, 1, 6);
 
 #region roll 3d die
 if (mouse_check_button_pressed(mb_right)) {
-	total_count = 0;
-	rolling = 0x3f >> (6 - total_dice_to_roll);
-	
-	with (obj_die_rolling) {
-		//instance_destroy();	
-	}
-	
-	repeat (total_dice_to_roll) {
-		var _inst = instance_create_layer(
-			mouse_x + irandom_range(-64, 64), mouse_y + irandom_range(-64, 64), 
-			"Instances", obj_die_rolling
-		);
-	
-		//var _ld = last_dir; 
-	
-		//with (_inst) {
-		//	direction = _ld;
-		//	item_dir = direction;
-		//	goal_x = x + lengthdir_x(item_dst, item_dir);
-		//	goal_y = y + lengthdir_y(item_dst, item_dir);
-			
-		//}
-		
-		//if (last_dir == init_dir) last_dir = 90;
-		//else last_dir = init_dir;
-		
-		total_count += _inst.side + 1;
-	}
+	//total_count = roll_random_dice(total_dice_to_roll);
+	total_count = roll_solo_dice();
 }
 #endregion

@@ -1,6 +1,6 @@
 /// @description 
 
-side = irandom_range(0, 5);
+side = irandom_range(1, 6);
 
 start_x = x;
 start_y = y;
@@ -28,3 +28,5 @@ image_speed = random_range(.5, 1);
 depth = -1;
 
 //alarm[0] = random_range(1, 2) * room_speed;
+
+name = "Die";
