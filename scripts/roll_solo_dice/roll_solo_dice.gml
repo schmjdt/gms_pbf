@@ -1,11 +1,10 @@
 /// @desc roll_solo_dice
 
 // TODO: Grab this order from data based on down/yards
-var _names = ["Run", "Short Pass", "Long Pass"];
-var _colors = [c_red, c_yellow, c_lime];
+var _order = "321";
 
-var _num = array_length_1d(_names);
-game.rolling = 0x7;
+var _num = string_length(_order);
+game.rolling = 0x7; // str_to_bin(string_repeat("1", _num));
 
 // Reset total dice roll count
 var _total = 0;
@@ -18,6 +17,7 @@ with (obj_die_rolling) {
 
 var _inst, _dice, _value;
 
+var _o = 1;
 var _i = 0;
 repeat (_num) {
 	_inst = instance_create_layer(
@@ -25,12 +25,17 @@ repeat (_num) {
 		"Instances", obj_die_rolling
 	);
 	
-	with (_inst) {
-		image_blend = _colors[_i];
-	}
+	var _id = string_char_at(_order, _o);
+	var _tmp = pbf_plays_map[? _id];
 	
+	with (_inst) {
+		image_blend  = _tmp[? "color"];
+		play_id = _id;
+	}
+		
 	_dice[_i] = _inst;
 		
+	_o += 1;
 	_i += 1;
 }
 
@@ -42,7 +47,7 @@ repeat (_num) {
 	
 	if (_inst.side >= _total) {
 		_total = _inst.side;
-		_result = _names[_i];
+		_result = _inst.play_id;
 	}
 	
 	_i -= 1;

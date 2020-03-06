@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "b3ac465a-599e-4790-89b7-e69787c47e44",
+            "Value": {
+                "id": "3d2de255-42ad-453d-8cb0-613ccba6686e",
+                "resourcePath": "scripts\\create_solo_dice\\create_solo_dice.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b5413832-daab-473b-be94-1447a4852d10",
             "Value": {
                 "id": "5974445a-9e19-45c7-9bc0-563f91a3000f",
@@ -335,6 +343,14 @@
             }
         },
         {
+            "Key": "ecf992d8-4dfc-41e2-9064-ae8bab6cb655",
+            "Value": {
+                "id": "7466dda2-e09c-48a1-acc6-65213ae27dfc",
+                "resourcePath": "datafiles_yy\\plays.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "264b2f79-edc3-4c35-b456-af1fc77a871b",
@@ -361,8 +377,9 @@
     ],
     "script_order": [
         "fb077cd2-6e9b-4264-b931-67a7b5337c9f",
-        "bf5eeaff-070c-411b-8caa-4319aed0252b",
         "a62f999f-3e7f-475a-adab-77075067cee7",
+        "b3ac465a-599e-4790-89b7-e69787c47e44",
+        "bf5eeaff-070c-411b-8caa-4319aed0252b",
         "ac16736c-fad8-4fc7-9516-22378b7b1b17",
         "c0b47286-ecb3-462a-ada5-dcf667854627",
         "ca27cd43-4a5d-4bac-aab1-01e62770a2b2",

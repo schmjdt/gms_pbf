@@ -49,6 +49,8 @@ total_dice_to_roll = clamp(total_dice_to_roll, 1, 6);
 #region roll 3d die
 if (mouse_check_button_pressed(mb_right)) {
 	//total_count = roll_random_dice(total_dice_to_roll);
-	total_count = roll_solo_dice();
+	var _id = roll_solo_dice();
+	var _tmp = pbf_plays_map[? _id];
+	total_count = _tmp[? "play"];
 }
 #endregion

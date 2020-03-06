@@ -11,4 +11,4 @@ solo_result = "";
 DEBUG = false;
 
 
-script_execute(test_colors);
+script_execute(create_solo_dice);
