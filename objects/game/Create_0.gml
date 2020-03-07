@@ -11,8 +11,10 @@ solo_result = "";
 DEBUG = false;
 
 
-pbf_plays_map = script_execute(load_basic_solo_play_selector_dice);
-pbf_play_selector_map = script_execute(load_rules_basic_solo_play_selector);
+map_pbf_dice = script_execute(load_dice);
+
+//pbf_plays_map = script_execute(load_basic_solo_play_selector_dice);
+//pbf_play_selector_map = script_execute(load_rules_basic_solo_play_selector);
 
 /* Test String Parsing:
 	// Ranges

@@ -4,10 +4,10 @@ var _c = c_black;
 draw_text_color(10, 10, "Amount: " + string(total_dice_to_roll), _c, _c, _c, _c, 1);
 
 var _count = string(total_count);
-if (rolling) _count = "rolling..."
+if (global.rolling) _count = "rolling..."
 
 draw_text_color(10, 30, "Total : " + _count, _c, _c, _c, _c, 1);
-draw_text_color(10, 50, "mask  : " + str_to_bin(rolling), _c, _c, _c, _c, 1);
+draw_text_color(10, 50, "mask  : " + str_to_bin(global.rolling), _c, _c, _c, _c, 1);
 
 
 if (DEBUG) {

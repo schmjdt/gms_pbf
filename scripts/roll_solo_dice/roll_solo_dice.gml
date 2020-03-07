@@ -1,10 +1,10 @@
 /// @desc roll_solo_dice
 
 // TODO: Grab this order from data based on down/yards
-var _order = "321";
-var _modify = [0, 0, 0];
+var _order = ["300", "200", "100", "300", "200", "100"];
+var _modify = [0, 0, 0, 0, 0, 0];
 
-var _num = string_length(_order);
+var _num = array_length_1d(_order);
 global.rolling = str_to_one(_num);
 
 // Reset total dice roll count
@@ -18,7 +18,6 @@ with (obj_die_rolling) {
 
 var _inst, _dice, _value;
 
-var _o = 1;
 var _i = 0;
 repeat (_num) {
 	_inst = instance_create_layer(
@@ -26,18 +25,20 @@ repeat (_num) {
 		"Instances", obj_die_rolling
 	);
 	
-	var _id = string_char_at(_order, _o);
-	var _tmp = pbf_plays_map[? _id];
+	var _id = _order[_i];
+	var _c = map_get_deep(map_pbf_dice, "Play Selector", _id, "color");
+	var _s = map_get_deep(map_pbf_dice, "Play Selector", _id, "scale");
 	
 	with (_inst) {
-		image_blend  = _tmp[? "color"];
+		image_blend = _c;
+		image_xscale = _s[@ 0];
+		image_yscale = _s[@ 1];
 		play_id = _id;
 		side = clamp(side + _modify[_i], 1, 6);
 	}
 		
 	_dice[_i] = _inst;
 		
-	_o += 1;
 	_i += 1;
 }
 
