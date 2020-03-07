@@ -2,9 +2,10 @@
 
 // TODO: Grab this order from data based on down/yards
 var _order = "321";
+var _modify = [0, 0, 0];
 
 var _num = string_length(_order);
-game.rolling = 0x7; // str_to_bin(string_repeat("1", _num));
+global.rolling = str_to_one(_num);
 
 // Reset total dice roll count
 var _total = 0;
@@ -31,6 +32,7 @@ repeat (_num) {
 	with (_inst) {
 		image_blend  = _tmp[? "color"];
 		play_id = _id;
+		side = clamp(side + _modify[_i], 1, 6);
 	}
 		
 	_dice[_i] = _inst;

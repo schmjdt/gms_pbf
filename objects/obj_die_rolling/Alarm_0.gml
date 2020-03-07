@@ -7,6 +7,6 @@ just_spawned = 0;
 //image_speed = 0;
 //speed = 0;
 
-//game.rolling = game.rolling >> 1;
+//global.rolling = global.rolling >> 1;
 
 //alarm[0] = -1;

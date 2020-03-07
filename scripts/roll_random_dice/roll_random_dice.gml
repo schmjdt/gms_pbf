@@ -6,7 +6,7 @@ var _num = argument[0];
 // Reset total dice roll count
 var _total = 0;
 
-game.rolling = 0x3f >> (6 - _num);
+global.rolling = 0x3f >> (6 - _num);
 
 // Destroy any previously rolled dice
 with (obj_die_rolling) {

@@ -13,7 +13,7 @@ if (drop_move) {
 		drop_move = false;	
 	}
 } else if (!drop_move and !drop_done) {
-	game.rolling = game.rolling >> 1;	
+	global.rolling = global.rolling >> 1;	
 	sprite_index = spr_faces_d6;
 	image_index = side;
 	image_speed = 0;
