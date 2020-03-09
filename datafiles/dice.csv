@@ -1,7 +1,7 @@
-type,id,name,color,scale
-Defense Effect,010,white,000000,".5,.5"
-Defense Effect,020,blue,0000ff,".5,.5"
-Play Selector,100,Run,ff0000,"1,1"
-Play Selector,200,Short Pass,ffff00,"1,1"
-Play Selector,300,Long Pass,00ff00,"1,1"
-Offense,900,Offense,3d3d3d,"1,1"
+id,name,color,scale,type
+110,Run,ff0000,"1,1",Play Selector
+120,Short Pass,ffff00,"1,1",Play Selector
+130,Long Pass,00ff00,"1,1",Play Selector
+210,white,000000,".5,.5",Defense Effect
+220,blue,0000ff,".5,.5",Defense Effect
+310,Offense,3d3d3d,"1,1",Offense
