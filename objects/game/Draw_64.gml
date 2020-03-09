@@ -9,6 +9,8 @@ if (global.rolling) _count = "rolling..."
 draw_text_color(10, 30, "Total : " + _count, _c, _c, _c, _c, 1);
 draw_text_color(10, 50, "mask  : " + str_to_bin(global.rolling), _c, _c, _c, _c, 1);
 
+draw_text_color(10, 100, "Down : " + string(down), _c, _c, _c, _c, 1);
+draw_text_color(10, 120, "Ball : " + string(ball_position), _c, _c, _c, _c, 1);
 
 if (DEBUG) {
 	with (obj_die_rolling) {
