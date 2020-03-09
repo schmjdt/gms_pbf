@@ -51,7 +51,7 @@ if (mouse_check_button_pressed(mb_right)) {
 	//total_count = roll_random_dice(total_dice_to_roll);
 	var _id = roll_solo_dice();
 	
-	total_count = map_get_deep(map_pbf_dice, "Play Selector", _id, "name");
+	total_count = map_get_deep(map_pbf_dice, _id, "name");
 	//total_count = _tmp[? "name"];
 }
 #endregion

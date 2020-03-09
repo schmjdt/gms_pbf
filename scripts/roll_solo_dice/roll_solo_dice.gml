@@ -1,7 +1,7 @@
 /// @desc roll_solo_dice
 
 // TODO: Grab this order from data based on down/yards
-var _order = ["300", "200", "100", "300", "200", "100"];
+var _order = ["130", "120", "110", "130", "120", "110"];
 var _modify = [0, 0, 0, 0, 0, 0];
 
 var _num = array_length_1d(_order);
@@ -10,13 +10,13 @@ global.rolling = str_to_one(_num);
 // Reset total dice roll count
 var _total = 0;
 var _result = noone;
+var _inst, _dice, _value;
 
 // Destroy any previously rolled dice
 with (obj_die_rolling) {
 	instance_destroy();	
 }
 
-var _inst, _dice, _value;
 
 var _i = 0;
 repeat (_num) {
@@ -26,14 +26,14 @@ repeat (_num) {
 	);
 	
 	var _id = _order[_i];
-	var _c = map_get_deep(map_pbf_dice, "Play Selector", _id, "color");
-	var _s = map_get_deep(map_pbf_dice, "Play Selector", _id, "scale");
+	var _c = map_get_deep(map_pbf_dice, _id, "color");
+	var _s = map_get_deep(map_pbf_dice, _id, "scale");
 	
 	with (_inst) {
 		image_blend = _c;
 		image_xscale = _s[@ 0];
 		image_yscale = _s[@ 1];
-		play_id = _id;
+		die_id = _id;
 		side = clamp(side + _modify[_i], 1, 6);
 	}
 		
@@ -50,7 +50,7 @@ repeat (_num) {
 	
 	if (_inst.side >= _total) {
 		_total = _inst.side;
-		_result = _inst.play_id;
+		_result = _inst.die_id;
 	}
 	
 	_i -= 1;
