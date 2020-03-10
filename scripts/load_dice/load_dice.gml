@@ -20,7 +20,7 @@ repeat (_h - 1) {
 	_c1 = _csv[# 0, _i]; // id
 	_c2 = _csv[# 1, _i]; // name
 	_c3 = str_to_color(_csv[# 2, _i]); // color
-	_c4 = str_to_lst(_csv[# 3, _i], true); // scale
+	_c4 = str_to_lst(_csv[# 3, _i], ",", true); // scale
 	_c5 = _csv[# 4, _i]; // type
 		
 	// Don't add to the main map until the key is different

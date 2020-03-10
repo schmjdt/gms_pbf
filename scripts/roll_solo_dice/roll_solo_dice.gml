@@ -1,5 +1,7 @@
 /// @desc roll_solo_dice
 
+script_execute(get_solo_dice);
+
 // TODO: Grab this order from data based on down/yards
 var _order = ["130", "120", "110", "130", "120", "110"];
 var _modify = [0, 0, 0, 0, 0, 0];
