@@ -38,10 +38,9 @@ while (!is_undefined(_k)) {
 	_k = ds_map_find_next(_down, _k);
 }
 
-// TODO: Figure out which yard key using based on yards_to_first
 
 var _play = map_get_deep(_down, _k, "play");
 var _mods = map_get_deep(_down, _k, "mods");
 
-show_debug_message("play: " + string(_play));
+return [_play, _mods];
 

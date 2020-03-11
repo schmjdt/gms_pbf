@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "011f1fc1-ede7-43ce-944e-2ac5acaaa9f5",
+            "Value": {
+                "id": "b37818bc-4336-421b-a33a-2cd36508e386",
+                "resourcePath": "scripts\\draw_gui_text\\draw_gui_text.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "034af1e4-b69d-43bf-98fb-4d28e92793cc",
             "Value": {
                 "id": "b29df12a-a6be-41ea-b8ec-dd4d304dec74",
