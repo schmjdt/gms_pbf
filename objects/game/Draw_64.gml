@@ -13,8 +13,8 @@ var _rolls = [
 
 var _stats = [
 	"Down: " + string(down),
-	"First: " + string(yards_to_first),
-	"Ball: " + string(ball_position)
+	"First: " + string(first),
+	"Ball: " + string(ball)
 ]
 
 draw_gui_text(_rolls, 10, 10, _c);

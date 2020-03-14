@@ -18,9 +18,9 @@ enum Team {
 }
 
 quarter = 1;
-down = 1;
-yards_to_first = 10;
-ball_position = 20;
+down = irandom_range(1, 4);
+first = irandom_range(1,15);
+ball = irandom_range(1,99);
 
 /*
 
@@ -61,5 +61,11 @@ pbf_play_selector_map = script_execute(load_rules_basic_solo_play_selector);
 	// Modifiers
 	var _s = "[0,-1,-2]"
 */
+
+#endregion
+
+#region Test Code
+
+script_execute(roll_offense_dice);
 
 #endregion

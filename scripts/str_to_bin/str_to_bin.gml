@@ -1,5 +1,6 @@
 /// @desc str_to_bin
 /// @arg string
+/// @return 
 
 var _str = argument[0];
 var _result = "";

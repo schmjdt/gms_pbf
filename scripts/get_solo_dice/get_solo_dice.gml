@@ -12,7 +12,7 @@ if (possession == Team.home) {
 
 var _down = map_get_deep(_map, _possession, down);
 var _k = ds_map_find_first(_down);
-var _y = yards_to_first;
+var _y = first;
 
 while (!is_undefined(_k)) {
 	_min = "";
