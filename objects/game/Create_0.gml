@@ -3,9 +3,12 @@
 //randomize();
 
 total_dice_to_roll = 1;
-total_count = 0;
+clear_dice = true;
 
-global.rolling = false;
+x_room = room_width / 2;
+y_room = room_height / 2;
+
+reset_dice();
 
 DEBUG = false;
  
@@ -82,9 +85,5 @@ global.map_pbf_rules_effects_defense = load_rules_effects_defense();
 
 #region Test Code
 
-global.pbf_play_offense = noone;
-global.pbf_play_defense = noone;
-global._pbf_effects_defense = noone;
-global._pbf_effects_offense = noone;
 
 #endregion

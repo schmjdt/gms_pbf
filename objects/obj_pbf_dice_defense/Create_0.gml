@@ -25,4 +25,4 @@ repeat (_l) {
 	_i += 1;
 }
 
-global._pbf_effects_defense = _n;
+global.pbf_effects_defense = _n;

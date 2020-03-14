@@ -8,7 +8,8 @@
         "191177db-e041-44d2-a6b3-846bb7d03bea",
         "cf2aa65c-3460-4037-9fed-d1241b3a0cd0",
         "85146289-3d4a-4702-bb83-5ad624f8617d",
-        "8f33851b-3f0d-4f1e-959f-072dda3324d1"
+        "8f33851b-3f0d-4f1e-959f-072dda3324d1",
+        "fbc6858f-3c47-46fa-bd97-37fc6d10a480"
     ],
     "filterType": "GMScript",
     "folderName": "PBF",

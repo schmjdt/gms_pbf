@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "fbc6858f-3c47-46fa-bd97-37fc6d10a480",
+            "Value": {
+                "id": "c8a76cdb-8b2d-447f-9718-f0373fa4b505",
+                "resourcePath": "scripts\\reset_dice\\reset_dice.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fce474a3-cd0a-424e-9ca7-145ec99bb865",
             "Value": {
                 "id": "d56ba9bb-a94e-4c81-bb54-cab5e1509dcb",
@@ -750,6 +758,7 @@
         "af91d1db-9665-491f-a04d-914bf06feab5",
         "6348f8a3-3ae2-4d76-8ee0-4e60d5dff59a",
         "b24bf24f-1846-4ec7-9d40-33063462d2b8",
+        "fbc6858f-3c47-46fa-bd97-37fc6d10a480",
         "93d60641-29bb-45b5-83b9-0e3766b0f0c2",
         "ac16736c-fad8-4fc7-9516-22378b7b1b17",
         "c0b47286-ecb3-462a-ada5-dcf667854627",
