@@ -16,7 +16,7 @@ repeat (_num) {
 	_v = ds_map_find_value(_result, _a);
 	
 	if (is_undefined(_v)) {
-		show_debug_message("key " + string(_a) + " not found within the map.");
+		//show_debug_message("key " + string(_a) + " not found within the map.");
 		_result = noone;
 		break;
 	}

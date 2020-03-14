@@ -1,4 +1,4 @@
-/// @desc load_rules_basic_solo_play_selector
+/// @desc load_dice
 
 var _map = ds_map_create();
 

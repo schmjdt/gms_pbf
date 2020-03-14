@@ -1,4 +1,4 @@
-type,down,yards,play,mods
+type,down,first,dice,mods
 offense,1,1,"110,120,130","0,0,0"
 offense,2,1-6,"110,120,130","0,0,0"
 offense,2,7-10,"120,110,130","0,0,0"

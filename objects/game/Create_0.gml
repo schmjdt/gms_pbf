@@ -6,7 +6,6 @@ total_dice_to_roll = 1;
 total_count = 0;
 
 global.rolling = false;
-solo_result = "";
 
 DEBUG = false;
  
@@ -17,55 +16,75 @@ enum Team {
 	home = 1,
 }
 
-quarter = 1;
-down = irandom_range(1, 4);
-first = irandom_range(1,15);
-ball = irandom_range(1,99);
+#region Load Stat CSVs
 
-/*
+max_quarter		= 4;
+initial_quarter = 1;
+initial_time	= 30;
 
-0   10      50     10   0
-|----|--..--|--..--|----|
-0   10      50     90  100
+#endregion
 
-When displaying, if position > 50, then display_pos = position - 50;
+#region Clock Stats
 
-When moving ball, position += distance * possession
-*/
+time	= initial_time;
+quarter = initial_quarter;
 
-possession = Team.home;
+#endregion
 
-// # of plays left for the quarter
-time = 30;
-// Team Stats
+#region Field Stats
+
+// TODO: Load from csv?
+global.field_names = ["team", "down", "first", "ball"];
+global.len_fn = array_length_1d(global.field_names);
+
+global.map_field = ds_map_create();
+
+var _i = 0;
+repeat (global.len_fn) {
+	var _k = global.field_names[@ _i];
+	var _n = 1;
+	
+	// TODO: Temp to load random data instead of from save file
+	if (_k == "Team") global.map_field[? _k] = choose(Team.away, Team.home);
+	else {
+		switch (_i) {
+			case 1: _n = 4; break;
+			case 2: _n = 15; break;
+			case 3: _n = 99; break;
+		}		
+		
+		global.map_field[? _k] = irandom_range(1, _n);
+	}
+	
+	_i += 1;
+}
+
+#endregion
+
+#region Team Stats
+
 // rushing, passing, interceptions, turnovers
 
-// Game Stats
-num_of_quarters = 4;
-starting_time = 30;
+#endregion
 
 #endregion
 
 #region Load CSVs
 
-map_pbf_dice = script_execute(load_dice);
+global.map_pbf_dice		 = load_dice();
+global.map_pbf_dice_sets = load_dice_sets();
 
-//pbf_plays_map = script_execute(load_basic_solo_play_selector_dice);
-pbf_play_selector_map = script_execute(load_rules_basic_solo_play_selector);
-
-/* Test String Parsing:
-	// Ranges
-	var _s = "1";
-	var _s = "4-8";
-	
-	// Modifiers
-	var _s = "[0,-1,-2]"
-*/
+global.map_pbf_rules_solo_play_selector = load_rules_basic_solo_play_selector();
+global.map_pbf_rules_defense = load_rules_defense();
+global.map_pbf_rules_effects_defense = load_rules_effects_defense();
 
 #endregion
 
 #region Test Code
 
-script_execute(roll_offense_dice);
+global.pbf_play_offense = noone;
+global.pbf_play_defense = noone;
+global._pbf_effects_defense = noone;
+global._pbf_effects_offense = noone;
 
 #endregion

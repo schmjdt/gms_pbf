@@ -4,7 +4,7 @@
 
 var _mDice = global.map_pbf_dice;
 
-var _aDice = global.map_pbf_dice_sets[? "Offense"];
+var _aDice = global.map_pbf_dice_sets[? "Yardage"];
 
 var _num_dice = array_length_1d(_aDice);
 global.rolling = str_to_one(_num_dice);

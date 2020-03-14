@@ -4,11 +4,20 @@
 /// @arg y
 /// @arg color
 
-font_height = string_height("M")
+
+var _lText = argument[0];
+var _len = array_length_1d(_lText);
+var _x = argument[1];
+var _y = argument[2];
+var _c = argument[3];
+
+var _fh = string_height("M")
 	
 var yy = 0;
-repeat (array_length_1d(argument0)) {
-	c = argument3;
-	draw_text_color(argument1, argument2 + (font_height * yy), argument0[yy], c, c, c, c, 1);
+repeat (_len) {
+	draw_text_color(_x, _y + (_fh * yy), _lText[@ yy], _c, _c, _c, _c, 1);
+	
 	yy += 1;
 }
+
+return 20 + _y + (_fh * _len);

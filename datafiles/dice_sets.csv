@@ -1,0 +1,5 @@
+type,dice
+Plays,"110,120,130"
+Defense,"210,220"
+Offense,"310,310,310"
+Yardage,"410,410,410,410"
