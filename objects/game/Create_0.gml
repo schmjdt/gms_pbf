@@ -8,6 +8,8 @@ clear_dice = true;
 x_room = room_width / 2;
 y_room = room_height / 2;
 
+draw_set_font(fnt_normal);
+
 reset_dice();
 
 DEBUG = false;

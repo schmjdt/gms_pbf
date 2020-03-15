@@ -3,6 +3,6 @@ id,name,color,scale,type
 120,Short Pass,ffff00,"1,1",Play Selector
 130,Long Pass,00ff00,"1,1",Play Selector
 210,white,ffffff,".5,.5",Defense Effect
-220,black,3d3d3d,".5,.5",Defense Effect
-310,Offense,3d3d3d,"1,1",Offense
+220,black,505050,".5,.5",Defense Effect
+310,Offense,505050,"1,1",Offense
 410,Yardage,ffffff,"1,1",Yardage
