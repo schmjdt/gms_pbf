@@ -46,6 +46,7 @@ while (!is_undefined(_kRoll)) {
 
 var _aEffects = map_get_deep(_mVs, _kRoll, "effects");
 var _aMods	  = map_get_deep(_mVs, _kRoll, "mods");
+var _aDesc	  = map_get_deep(_mVs, _kRoll, "desc");
 // TODO: Error Handling - if no match found
 
-return [_aEffects, _aMods];
+return [_aEffects, _aMods, _aDesc];

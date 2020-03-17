@@ -1,8 +1,8 @@
 {
-    "id": "af91d1db-9665-491f-a04d-914bf06feab5",
+    "id": "3249baf8-1fa0-4cfb-a373-1a9273823029",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "roll_offense_dice",
+    "name": "roll_pbf_dice",
     "IsCompatibility": false,
     "IsDnD": false
 }

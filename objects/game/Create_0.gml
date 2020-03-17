@@ -12,8 +12,11 @@ draw_set_font(fnt_normal);
 
 reset_dice();
 
-global.die_modifier = 0;
-global.die_bonus    = -1;
+global.die_modifier   = 0;
+global.die_multiplier = 1;
+global.die_amount     = 0;
+global.die_values     = [];
+global.die_bonus      = -1;
 
 DEBUG = false;
  

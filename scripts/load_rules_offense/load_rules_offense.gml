@@ -15,6 +15,7 @@ repeat (_ph - 1) {
 	_c2 = _csv[# 1, _i]; // roll
 	_c3 = str_to_lst(_csv[# 2, _i], ",", false); // effects
 	_c4 = str_to_lst(_csv[# 3, _i], ",", false);  // mods
+	_c5 = str_to_lst(_csv[# 4, _i], ",", false); // desc
 		
 	// Don't add to the main map until the key is different
 	if (_pk_1 != noone and _c1 != _pk_1) {
@@ -26,6 +27,7 @@ repeat (_ph - 1) {
 	
 	ds_map_replace(_tmp_map_2, "effects", _c3);
 	ds_map_replace(_tmp_map_2, "mods",    _c4);
+	ds_map_replace(_tmp_map_2, "desc",    _c5);
 	
 	ds_map_add_map(_tmp_map_1, _c2, _tmp_map_2);
 	

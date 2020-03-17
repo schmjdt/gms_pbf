@@ -79,14 +79,6 @@
             }
         },
         {
-            "Key": "0f1698ce-1454-4bfb-97f6-1556743356ce",
-            "Value": {
-                "id": "47c993eb-751e-4091-b02b-e4713e7a2c80",
-                "resourcePath": "datafiles_yy\\offense.csv.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "0fddc726-5a24-4c96-b3f8-6343ff6fddd2",
             "Value": {
                 "id": "b7e3f595-83c5-4fa5-8155-8b6b9bce4745",
@@ -171,6 +163,14 @@
             "Value": {
                 "id": "7bf8efc7-2895-40f3-a94c-45303babab5e",
                 "resourcePath": "scripts\\load_rules_effects_offense\\load_rules_effects_offense.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3249baf8-1fa0-4cfb-a373-1a9273823029",
+            "Value": {
+                "id": "a75dc268-d2b7-4233-91ea-2e6dc03c1eb1",
+                "resourcePath": "scripts\\roll_pbf_dice\\roll_pbf_dice.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -271,6 +271,14 @@
             }
         },
         {
+            "Key": "5a34effd-8174-439f-8a13-5eab9109adbb",
+            "Value": {
+                "id": "5f552a7e-a270-40d0-9d7d-7bdb5bad13eb",
+                "resourcePath": "datafiles_yy\\effects_offense.csv.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "5b8ec499-e7e5-46b1-887e-debe1f194600",
             "Value": {
                 "id": "70e9bf39-95b3-4937-a7d7-f28b30148600",
@@ -295,14 +303,6 @@
             }
         },
         {
-            "Key": "6348f8a3-3ae2-4d76-8ee0-4e60d5dff59a",
-            "Value": {
-                "id": "0a83fa44-2a51-428b-a14c-0781755847e6",
-                "resourcePath": "scripts\\roll_yardage_dice\\roll_yardage_dice.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "641e5d51-b417-4d25-b950-b8520ec02049",
             "Value": {
                 "id": "611160d9-703e-4cba-bbae-e31196b93d6e",
@@ -316,14 +316,6 @@
                 "id": "cff6b946-172a-4373-a923-bb577800fdb7",
                 "resourcePath": "sprites\\spr_faces_d6\\spr_faces_d6.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "6cf2f8ab-49aa-491b-8e0a-2c6eb14a7c08",
-            "Value": {
-                "id": "4f838582-556c-4dfb-8550-bb2800a92b4f",
-                "resourcePath": "datafiles_yy\\effects_offense.csv.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -348,6 +340,14 @@
                 "id": "b9ff7f69-6d0c-4712-8ee6-63bb590700f4",
                 "resourcePath": "views\\77bd404b-1cd3-4f7f-a56f-b93098418d7e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "81bbaf1c-2191-4965-b2fd-99a3ffcd6435",
+            "Value": {
+                "id": "4fbb8e90-58ee-4c2a-bf0d-81a8788c9b1e",
+                "resourcePath": "datafiles_yy\\offense.csv.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -379,6 +379,14 @@
             "Value": {
                 "id": "d3ed2140-ca7b-4ef3-98b2-b77231c57e32",
                 "resourcePath": "scripts\\str_to_lst\\str_to_lst.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "88eb3880-38c9-4cb9-97b5-c681953beebd",
+            "Value": {
+                "id": "46661f62-cd79-4b9c-abed-0d95361ddf2b",
+                "resourcePath": "scripts\\get_roll_total\\get_roll_total.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -519,14 +527,6 @@
             }
         },
         {
-            "Key": "af91d1db-9665-491f-a04d-914bf06feab5",
-            "Value": {
-                "id": "47add45f-c67f-4297-aaa1-022dd57dd98c",
-                "resourcePath": "scripts\\roll_offense_dice\\roll_offense_dice.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "b1a2dc78-2bad-4416-a43b-bd766cfba433",
             "Value": {
                 "id": "691e7fc8-5ba6-4c50-8fda-5cdcd2f65cab",
@@ -556,6 +556,14 @@
                 "id": "5974445a-9e19-45c7-9bc0-563f91a3000f",
                 "resourcePath": "objects\\game\\game.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6578a25-3da3-4cd5-ac68-d81600b55050",
+            "Value": {
+                "id": "9d37cafa-d214-43fd-ade0-7cfc116429b6",
+                "resourcePath": "scripts\\n_of_x\\n_of_x.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -675,14 +683,6 @@
             "Value": {
                 "id": "afffac71-d6f8-4b22-9b5b-d87362fd3599",
                 "resourcePath": "scripts\\exit_game\\exit_game.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "d5d63438-92a5-4d92-ac5b-36c08e394354",
-            "Value": {
-                "id": "39cbbac8-210d-48ce-9030-cdaca8861b8e",
-                "resourcePath": "scripts\\roll_defense_dice\\roll_defense_dice.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -837,9 +837,8 @@
         "30d81cf2-eaca-4b2d-a335-02a63ff14c18",
         "0b92a246-d345-4a18-a320-e67b409202e5",
         "26f6b066-eaac-49c7-a005-7cfdd40872a9",
-        "d5d63438-92a5-4d92-ac5b-36c08e394354",
-        "af91d1db-9665-491f-a04d-914bf06feab5",
-        "6348f8a3-3ae2-4d76-8ee0-4e60d5dff59a",
+        "3249baf8-1fa0-4cfb-a373-1a9273823029",
+        "88eb3880-38c9-4cb9-97b5-c681953beebd",
         "b24bf24f-1846-4ec7-9d40-33063462d2b8",
         "549b5877-923b-48d5-a79a-9517a531ad3d",
         "fbc6858f-3c47-46fa-bd97-37fc6d10a480",
@@ -860,6 +859,7 @@
         "b1a2dc78-2bad-4416-a43b-bd766cfba433",
         "f5040645-2cd6-4116-a8eb-7458b9c4ec21",
         "93d60641-29bb-45b5-83b9-0e3766b0f0c2",
+        "b6578a25-3da3-4cd5-ac68-d81600b55050",
         "011f1fc1-ede7-43ce-944e-2ac5acaaa9f5"
     ],
     "tutorial": ""

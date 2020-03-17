@@ -2,7 +2,12 @@
 
 event_inherited();
 
-var _total = roll_defense_dice();
+var _aSet = global.map_pbf_dice_sets[? "Defense"];
+var _aDice = roll_pbf_dice(_aSet);
+var _total = get_roll_total(_aDice);
+
+//var _total = roll_defense_dice();
+
 game.total_count = _total;
 
 var _effects = get_defense_effects(_total);
@@ -42,7 +47,7 @@ repeat (_l) {
 				// Modifier determines adjust of roll value
 				_v = _m * _a;
 			}
-			_n += "Modified by " + string(_v);
+			_n += "Modified by " + string(_v) + ". ";
 			
 			global.die_modifier = _v;
 			break;

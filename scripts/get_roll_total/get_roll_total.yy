@@ -1,8 +1,8 @@
 {
-    "id": "6348f8a3-3ae2-4d76-8ee0-4e60d5dff59a",
+    "id": "88eb3880-38c9-4cb9-97b5-c681953beebd",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "roll_yardage_dice",
+    "name": "get_roll_total",
     "IsCompatibility": false,
     "IsDnD": false
 }

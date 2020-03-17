@@ -17,9 +17,6 @@ goal_s = random_range(.08, .15);
 goal_done = 1;
 collision_distance = 10;
 
-just_spawned = true;
-alarm[0] = 1 * room_speed;
-
 //var _c = choose(c_red, c_lime, c_yellow);
 //image_blend = _c;
 
@@ -27,7 +24,5 @@ image_speed = random_range(.5, 1);
 image_index = irandom(image_number - 1);
 
 depth = -1;
-
-//alarm[0] = random_range(1, 2) * room_speed;
 
 name = "Die";

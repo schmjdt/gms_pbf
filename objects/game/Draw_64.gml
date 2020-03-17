@@ -19,17 +19,20 @@ var _play_offense = noone; if (global.pbf_play_offense != noone) _play_offense =
 var _play_defense = noone; if (global.pbf_play_defense != noone) _play_defense = map_get_deep(_mDice, global.pbf_play_defense, "name");
 var _effect_defense = global.pbf_effects_defense;
 var _effect_offense = global.pbf_effects_offense;
+var _effect_yardage = global.pbf_effects_yardage;
 
 if (_play_offense == noone) _play_offense = "";
 if (_play_defense == noone   or (!instance_exists(obj_pbf_dice_defense) and global.rolling)) _play_defense = "";
 if (_effect_defense == noone or (!instance_exists(obj_pbf_dice_offense) and global.rolling)) _effect_defense = "";
 if (_effect_offense == noone or (!instance_exists(obj_pbf_dice_yardage) and global.rolling)) _effect_offense = "";
+if (_effect_yardage == noone) _effect_yardage = "";
 
 var _plays = [
 	"Offense: " + string(_play_offense),
 	"Defense: " + string(_play_defense),
 	"Defense Effect: " + string(_effect_defense),
 	"Offense Effect: " + string(_effect_offense),
+	"Yardage: " + string(_effect_yardage),
 ]
 
 var _y = 10;

@@ -64,10 +64,12 @@ if (keyboard_check_pressed(vk_space)) {
 	// Create objects that roll the dice based on "Game State" (IE: Which dice don't exist yet)
 	if (!instance_exists(par_pbf_dice)) {
 		// Randomly pick an offense play
-		var _plays = global.map_pbf_dice_sets[? "Plays"];
-		var _l = array_length_1d(_plays) - 1;
-		var _r = irandom(_l); _r = irandom(_l); _r = irandom(_l);
-		global.pbf_play_offense = _plays[@ _r];
+		//var _plays = global.map_pbf_dice_sets[? "Plays"];
+		//var _l = array_length_1d(_plays) - 1;
+		//var _r = irandom(_l); _r = irandom(_l); _r = irandom(_l);
+		//global.pbf_play_offense = _plays[@ _r];
+		// TEST: Manually pick offense
+		global.pbf_play_offense = "120";
 
 		instance_create_layer(x, y, "Instances", obj_pbf_dice_solo_play_selector);
 	} else if (!instance_exists(obj_pbf_dice_defense)) {

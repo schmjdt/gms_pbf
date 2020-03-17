@@ -4,7 +4,25 @@
 
 var _result = [];
 
-var _values = range(argument[0], argument[1]);
+var _m = argument[0];
+
+var _min, _max;
+
+if (argument_count == 1) {
+	var _l = array_length_1d(_m);
+	if (_l > 1) {
+		_min = _m[@ 0]; 
+		_max = _m[@ _l - 1];
+	} else {
+		_min = _m[@ 0];
+		_max = undefined;
+	}
+} else {
+	_min = _m;
+	_max = argument[1];
+}
+
+var _values = range(_min, _max);
 var _values_len = array_length_1d(_values);
 
 var _b, _c, _s;
