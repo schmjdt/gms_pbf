@@ -12,6 +12,9 @@ draw_set_font(fnt_normal);
 
 reset_dice();
 
+global.die_modifier = 0;
+global.die_bonus    = -1;
+
 DEBUG = false;
  
 #region Setup Field
@@ -81,8 +84,9 @@ global.map_pbf_dice_sets = load_dice_sets();
 
 global.map_pbf_rules_solo_play_selector = load_rules_basic_solo_play_selector();
 global.map_pbf_rules_defense = load_rules_defense();
+global.map_pbf_rules_offense = load_rules_offense();
 global.map_pbf_rules_effects_defense = load_rules_effects_defense();
-
+global.map_pbf_rules_effects_offense = load_rules_effects_offense();
 #endregion
 
 #region Test Code

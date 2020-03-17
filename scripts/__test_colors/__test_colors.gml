@@ -6,14 +6,14 @@
 */
 
 #region built-in colors
-n_color = [
+var n_color = [
 	"c_white",
 	"c_red",
 	"c_yellow",
 	"c_lime"
 ]
 
-c_color = [
+var c_color = [
 	c_white,
 	c_red,
 	c_yellow,
@@ -22,7 +22,7 @@ c_color = [
 #endregion
 
 #region color hex string
-s_color = [
+var s_color = [
 	"ffffff",
 	"ff0000",
 	"ffff00",

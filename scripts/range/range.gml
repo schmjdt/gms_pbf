@@ -5,6 +5,11 @@
 var _min = argument[0];
 var _max = argument[1];
 
+if (is_undefined(_max)) {
+	_max = _min;
+	_min = 1;
+}
+
 var _result = [];
 
 var _m = _min;

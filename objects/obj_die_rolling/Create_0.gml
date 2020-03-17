@@ -24,6 +24,7 @@ alarm[0] = 1 * room_speed;
 //image_blend = _c;
 
 image_speed = random_range(.5, 1);
+image_index = irandom(image_number - 1);
 
 depth = -1;
 
